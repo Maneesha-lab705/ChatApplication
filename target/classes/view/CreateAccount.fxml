@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="523.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.catmoon.controller.CreateAccountController">
+   <children>
+      <ImageView fitHeight="523.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cat moon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="33.0" layoutY="217.0" prefHeight="45.0" prefWidth="177.0" styleClass="edge-button1" stylesheets="@../styl/style1.css" />
+      <TextField fx:id="txtEmail" layoutX="33.0" layoutY="273.0" prefHeight="45.0" prefWidth="177.0" styleClass="edge-button1" stylesheets="@../styl/style1.css" />
+      <TextField fx:id="txtPassword" layoutX="33.0" layoutY="332.0" prefHeight="45.0" prefWidth="177.0" styleClass="edge-button1" stylesheets="@../styl/style1.css" />
+      <JFXButton fx:id="btnSave" layoutX="47.0" layoutY="396.0" onAction="#btnSsaveOnAction" prefHeight="25.0" prefWidth="148.0" text="save" textFill="#f8f8f8" />
+      <JFXButton fx:id="btnBack" layoutX="136.0" layoutY="446.0" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="84.0" text="back" textFill="#f8f8f8" />
+      <ImageView fitHeight="35.0" fitWidth="26.0" layoutX="204.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-x-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnClose" layoutX="204.0" layoutY="2.0" onAction="#btnCloseOnAction" opacity="0.0" prefHeight="25.0" prefWidth="26.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+
+<AnchorPane fx:id="root" prefHeight="552.0" prefWidth="290.0" style="-fx-background-color: #FF0000;" stylesheets="@../styl/style1.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.catmoon.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="303.0" fitWidth="300.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" styleClass="edge-button1">
+         <image>
+            <Image url="@../img/cat.gif" />
+         </image></ImageView>
+      <Polygon layoutX="50.0" layoutY="512.0" opacity="0.53" points="-50.0, 18.0, 170.0, -198.0, 213.0, -299.0" stroke="BLACK" strokeType="INSIDE" styleClass="edge-button1">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.05787036940455437" green="0.3778833746910095" blue="0.6578947305679321" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6973684430122375" green="0.0968567281961441" blue="0.0968567281961441" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Polygon>
+      <TextField fx:id="txtUserName" layoutX="28.0" layoutY="245.0" onAction="#txtUserNameOnAction" onKeyTyped="#OnKeyTypeOnAction" prefHeight="42.0" prefWidth="238.0" promptText="UserName" styleClass="edge-button1" stylesheets="@../styl/style1.css" />
+      <JFXButton layoutX="196.0" layoutY="382.0" onAction="#loginBtnOnAction" prefHeight="42.0" prefWidth="81.0" style="-fx-background-color: yellow green;" styleClass="edge-button1" stylesheets="@../styl/style1.css" text="Login" textFill="#461c1c" />
+      <PasswordField fx:id="txtPassword" layoutX="28.0" layoutY="306.0" onAction="#txtPasswordOnAction" onKeyTyped="#OnKeyTypeOnAction2" prefHeight="42.0" prefWidth="238.0" promptText="Password" styleClass="edge-button1" stylesheets="@../styl/style1.css" />
+      <JFXButton layoutX="196.0" layoutY="442.0" onAction="#singinOnAction" prefHeight="42.0" prefWidth="81.0" style="-fx-background-color: green;" styleClass="edge-button1" text="SingIn" textFill="WHITE" />
+      <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="251.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-x-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnclose" layoutX="250.0" layoutY="2.0" onAction="#btnCloseOnAction" opacity="0.0" prefHeight="42.0" prefWidth="42.0" />
+   </children>
+   <styleClass>
+      <String fx:value="edge-button1" />
+      <String fx:value="edge-button1" />
+   </styleClass>
+</AnchorPane>
